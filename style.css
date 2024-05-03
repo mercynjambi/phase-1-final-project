@@ -1,141 +1,181 @@
-*{box-sizing: border-box;
+/* Light Theme */
+body {
+   background-color: #ffffff;
+   color: #000000;
 }
 
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 20px;
-
+/* Dark Theme */
+.dark-theme {
+   background-color: #333333;
+   color: #ffffff;
 }
 
-.input-container{
-    display: flex;
-    align-items: center;
-    border: 2px solid plum;
-    padding:10px;
-    width: 300px;
-    height: 50px;
-    border-radius: 50px;
-    margin: 10px;
-    position: relative;
-    transition: width 1.5s;
+
+* {
+   box-sizing: border-box;
 }
 
-.input{
-    width: 100%;
-    margin: 10px 50px;
-    margin-left: 20px;
-    height: 100%;
-    border: none; 
-     outline: none;
-    font-size: 20px;
-    padding: 0 10px;
-    color: pink;
-    background: transparent;
-    transition-delay:  0.5s;
-
+/* Container */
+.container1 {
+   border: 2px solid #FF7F50; /* Coral color for the border */
+   border-radius: 20px;
 }
 
-.fa-solid fa-magnifying-glass{
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-    color: black;
-    margin: 0 auto;
-    text-align:center;
-    cursor: pointer;
-    counter-reset: 5s;
-    /* transition: 0.5s; */
-
+/* Navigation */
+nav {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin: 20px;
 }
 
-.fa-solid fa-magnifying-glass:hover{
-    transform: scale(1.2);
-    transition: 0.5s;
-    color: red;
+/* Input Container */
+.input-container {
+   display: flex;
+   align-items: center;
+   border: 2px solid #FF6347; /* Tomato color for the border */
+   padding: 10px;
+   width: 300px;
+   height: 50px;
+   border-radius: 50px;
+   margin: 10px;
+   position: relative;
+   transition: width 1.5s;
 }
- ul li{
-    display: inline;
-    margin-left: 40px;
-    font-family: sans-serif;
- }
 
- main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
- }
+/* Input */
+.input {
+   width: 100%;
+   margin: 10px 50px;
+   margin-left: 20px;
+   height: 100%;
+   border: none;
+   outline: none;
+   font-size: 20px;
+   padding: 0 10px;
+   color: BLACK;
+   background: transparent;
+   transition-delay: 0.5s;
+}
 
- .container{
-    width:70%;
-    padding:20px;
-    box-shadow: 10px 10px 40px 10px purple;
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
- }
+/* Search Icon */
+.fa-magnifying-glass {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   font-size: 20px;
+   color: #000000; 
+   margin: 0 auto;
+   text-align: center;
+   cursor: pointer;
+}
 
- .content-container h1{
-    font-family: sans-serif;
-    font-size: 20px;
-    color:#2c2c2c;
-    margin-bottom: 5px;
+.fa-magnifying-glass:hover {
+   transform: scale(1.2);
+   transition: 0.5s;
+   color: #FF4500; /* Orange Red color on hover */
+}
 
- }
+/* List Items */
+ul li {
+   display: inline;
+   margin-left: 40px;
+   font-family: sans-serif;
+}
 
- .content-container p{
-    font-family: sans-serif;
-    font-size: 10px;
-    color:#444444;
-    margin-bottom: 25px;
-    line-height: 1.4;
-    width: 155px;
- }
+/* Main Container */
+main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
 
- .img {
-    transform: translateX(-120px);
-    margin-top: 1rem;
-    width: 350px;
-    height: 350px;
-    border-radius: 300px;
-    background: url("https://images.unsplash.com/photo-1600289031464-74d374b64991?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1075&q=80");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: conver;
-  }
-  
-  .ingredients {
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 5rem;
-    padding: 50px;
-  }
-  
-  .ingredients span {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-  }
-  
-  .ingredients {
-    padding: 10px 20px;
-    border: 2px solid #ff6e00;
-    color: #ff6e00;
-    font-family: sans-serif;
-    border-radius: 100px;
-  }
-  
-  .main-btn {
-    background: transparent;
-    border: none;
-    border: 2px solid #ffa31a;
-    padding: 10px;
-    color: #ffa31a;
-  }
+.container {
+   width: 70%;
+   padding: 20px;
+   box-shadow: 3px 5px 8px rgba(255, 99, 71, 0.5);
+   margin-top: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
 
+/* Content Title */
+.content-container h1 {
+   font-family: sans-serif;
+   font-size: 20px;
+   color: black;
+   margin-bottom: 5px;
+}
 
+/* Content Description */
+.content-container p {
+   font-family: sans-serif;
+   font-size: 10px;
+   color: black;
+   margin-bottom: 25px;
+   line-height: 1.4;
+   width: 155px;
+}
 
+/* Image */
+.img {
+   transform: translateX(-120px);
+   margin-top: 1rem;
+   width: 350px;
+   height: 350px;
+   border-radius: 50%;
+   background: url("https://images.unsplash.com/photo-1600289031464-74d374b64991?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1075&q=80");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
 
+/* Ingredients */
+.ingredients {
+   width: 80%;
+   margin: 0 auto;
+   margin-top: 5rem;
+   padding: 50px;
+}
+
+.ingredients span {
+   display: flex;
+   flex-wrap: wrap;
+   list-style: none;
+}
+
+.ingredients {
+   padding: 10px 20px;
+   border: 2px solid #FF6347; /* Tomato color for the border */
+   color: #FF6347; /* Tomato color for the text */
+   font-family: sans-serif;
+   border-radius: 100px;
+   margin-bottom: 10px;
+}
+
+.theme-toggle-button {
+   display: block;
+   margin: 20px auto;
+   background-color: orange;
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.theme-toggle-button:hover {
+   background-color: darkorange;
+}
+
+/* In Dark Theme, Toggle Button Color */
+.dark-theme .theme-toggle-button {
+   background-color: #333333;
+   color: #ffffff;
+}
+
+.dark-theme .theme-toggle-button:hover {
+   background-color: #555555;
+}
+ 

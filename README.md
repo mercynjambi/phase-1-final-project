@@ -23,7 +23,7 @@ Clone the repository to your local machine.
 Open the index.html file in your web browser.
 Enter the name of a meal you want to search for in the input field.
 Press the "Search" button or hit Enter to search for the meal.
-View the information about the meal, including its name, image, ingredients, and instructions.
+View the information about the meal, including its name, image, ingredients, and instructions.   
 Optionally, toggle between dark and light themes using the theme toggle button.
 
 Demo
